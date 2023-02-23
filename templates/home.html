@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+{% block content %}
+<!--Head TRENGER JEG DENNE HER NÅR JEG HAR DEN I LAYOUT-->
+<meta charset="UTF-8"> <!--Specify the character encoding for the html document (alphabeth)-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Allow to choose version of internet explorer-->
+<meta name="viewport" content="device-width, initial-scale=1.0">
+<title>{{Title}}</title>
+<!--CSS til home.css-->
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='home.css')}}"/>
+
+<!--Head slutter-->
+
+<!--Header section-->
+<section class="section_header_home">
+    <div class="container">
+      <div class="header_home">
+        <div class="box">
+          <h1><span class="text-logo">Home, welcome {{name}}</span></h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aut sequi cumque cupiditate! Quae, totam quibusdam? Impedit ullam modi qui debitis voluptatibus aliquid ducimus accusamus, soluta quas magni. Accusantium, quos?
+          </p>
+          <div class="container_buttons_header_home">
+            <a href="#" class="btn btn-primary btn-lg mr-2">Register</a>
+            <a href="#" class="btn btn-primary btn-lg mr-2">Login</a>
+          </div>
+  
+        </div>
+        <div class="box">
+          <img src="{{url_for('static', filename='icons/carbon_app.svg')}}"
+          width="300"
+          height="300"
+          alt=" "
+          />
+        </div>
+      </div>
+  
+    </div>
+  </section> 
+
+
+  <!--En oversikt over developers-->
+  
+  <section class="section_developers">
+    <div class="container">
+      
+      <div class="developers" style="display: block;">
+        <h1 style="text-align: center;">Our Team-bitch!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maxime atque? Beatae pariatur doloremque ex optio, dicta cumque necessitatibus sunt non distinctio architecto tenetur officiis? Consequuntur, error rem tempore est asperiores reprehenderit quisquam at repellat. Eos delectus cum perspiciatis similique commodi consequuntur mollitia minus animi doloremque modi earum consequatur dolore laudantium neque architecto enim, maiores aliquam! Harum natus corrupti necessitatibus?
+        </p>
+      </div>
+
+      <!--De tre første devolpersene i en egen div-->
+      <div class="developers">
+        <div class="box">
+          <img src="static/images/rich.jpeg" alt="" style="height: 200px; width: 200px; border-radius: 50%; border: 1px solid black;">
+          <h3>Richard Myrdal</h3>
+          <p>
+            Richard er det fremste medlemmet i gruppen. Han holder oppe humøret til alle, og alle skulle ønske de var Richard.
+          </p>
+          <div class="container_buttons_developers">
+            <a class="btn_developers" href="#">Curroculum</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="static/images/christian.jpeg" alt="" style="height: 200px; width: 200px; border-radius: 50%; border: 1px solid black;">
+          <h3>Christian Eriksen</h3>
+          <p>
+            Christian er det produktive medlemmet i gruppen. Han er den som koder, og Z'Ra er 100% avhengig av Christian for å få til noe.
+          </p>
+          <div class="container_buttons_developers">
+            <a class="btn_developers" href="#">Curroculum</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="static/images/sara2.jpeg" alt="" style="height: 200px; width: 200px; border-radius: 50%; border: 1px solid black;">
+          <h3>Z'ra Mustafa</h3>
+          <p>
+            Z'Ra er gruppens støttemedlem. Hun bruker helst tiden på å stille spørsmål, og foretrekker en god fest fremfor forelesning.
+          </p>
+          <div class="container_buttons_developers">
+            <a class="btn_developers" href="#">Curroculum</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="developers">
+        <div class="box">
+          <img src="static/images/po.webp" alt="" style="height: 200px; width: 200px; border-radius: 50%; border: 1px solid black;">
+          <h3>Per Ole Lande</h3>
+          <p>
+            Per Ole er gruppens fullmåne. Det er ingen som vet når han dukker opp i forelesning, men det er alltid like spesielt hver gang. 
+          </p>
+          <div class="container_buttons_developers">
+            <a class="btn_developers" href="#">Curroculum</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="static/images/rich.jpeg" alt="" style="height: 200px; width: 200px; border-radius: 50%; border: 1px solid black;">
+          <h3>X</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed odit aspernatur dolore omnis at, autem cupiditate beatae, eos ad deserunt aperiam fugiat. Minima vel enim dolor facere perferendis est? Est!
+          </p>
+          <div class="container_buttons_developers">
+            <a class="btn_developers" href="#">Curroculum</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Мышь_2.jpg/1200px-Мышь_2.jpg" alt="" style="height: 200px; width: 200px; border-radius: 50%; border: 1px solid black;">
+          <h3>X</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed odit aspernatur dolore omnis at, autem cupiditate beatae, eos ad deserunt aperiam fugiat. Minima vel enim dolor facere perferendis est? Est!
+          </p>
+          <div class="container_buttons_developers">
+            <a class="btn_developers" href="#">Curroculum</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+{% endblock content %}
